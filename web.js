@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 //var express = require('express');
 
 //var app = express.createServer(express.logger());
@@ -6,7 +7,7 @@
   //response.send('Hello World 2!');
 //});
 
-fs - require('fs');
+var fs - require('fs');
 
 var locIndex = fs.readFileSync('index.html')
 
