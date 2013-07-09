@@ -1,21 +1,29 @@
-var express = require('express');
+//var express = require('express');
 
-var app = express.createServer(express.logger());
+//var app = express.createServer(express.logger());
 
 //app.get('/', function(request, response) {
   //response.send('Hello World 2!');
 //});
 
-var fs = require("fs");
+//var fs = require("fs");
 //var disIndex = fs.readFileSync("index.html");
 //console.log (disIndex);
 
-var text = fs.readFileSync('index.html','utf8');
+//var text = fs.readFileSync('index.html','utf8');
 
-console.log (text);
+//console.log (text);
 
 
-var port = process.env.PORT || 5000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
-});
+//var port = process.env.PORT || 5000;
+//app.listen(port, function() {
+ // console.log("Listening on " + port);
+//});
+
+var fs = require('fs');
+
+// ---- SYNC
+
+console.log("starting sync read");
+var data = fs.readFileSync("./index.html");
+console.log("Characters: " + data.toString().length);
