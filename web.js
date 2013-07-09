@@ -7,7 +7,7 @@ var app = express.createServer(express.logger());
 //});
 
 var fs = require("fs");
-var disIndex = fs.readFileSync("index.html");
+var disIndex = fs.readFileSync("/home/ubuntu/bitstarter/index.html");
 console.log (disIndex);
 
 
