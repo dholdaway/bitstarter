@@ -9,7 +9,10 @@
 
 var fs = require('fs');
 
-var contents = fs.readFileSync('index.html');
+var contents = fs.readFileSync('index.html', 'utf8');
+var buf = new Buffer('contents');
+buffer.toString("utf-8", 0, 12)
+
 console.log(contents);
 
 
