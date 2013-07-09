@@ -6,6 +6,7 @@ var app = express.createServer(express.logger());
   //response.send('Hello World 2!');
 //});
 
+var fs = require("fs");
 var disIndex = fs.readFileSync("index.html");
 console.log (disIndex);
 
