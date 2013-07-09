@@ -9,9 +9,9 @@ var app = express.createServer(express.logger());
 
 var fs = require('fs');
 
-var locIndex = fs.readFileSync('index.html')
+var contents = fs.readFileSync('index.html');
+console.log(contents);
 
-console.log(locIndex);
 
 
 var port = process.env.PORT || 5000;
