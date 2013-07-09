@@ -7,7 +7,7 @@
   //response.send('Hello World 2!');
 //});
 
-var fs - require('fs');
+var fs = require('fs');
 
 var locIndex = fs.readFileSync('index.html')
 
