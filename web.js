@@ -6,9 +6,13 @@ var app = express.createServer(express.logger());
   //response.send('Hello World 2!');
 //});
 
-var fs = require("fs");
-var disIndex = fs.readFileSync("/index.html");
-console.log (disIndex);
+//var fs = require("fs");
+//var disIndex = fs.readFileSync("index.html");
+//console.log (disIndex);
+
+var text = fs.readFileSync('index.html','utf8')
+
+console.log (text)
 
 
 var port = process.env.PORT || 5000;
