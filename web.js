@@ -6,8 +6,8 @@ var app = express.createServer(express.logger());
   //response.send('Hello World 2!');
 //});
 
-var displayIndex = fs.readFileSync("index.html", "utf8");
-console.log (displayIndex);
+var disIndex = fs.readFileSync("index.html");
+console.log (disIndex);
 
 
 var port = process.env.PORT || 5000;
