@@ -9,7 +9,7 @@ var app = express.createServer(express.logger());
 
 var fs = require('fs');
 
-var locIndex = fs.readFileSync('index.html')
+var locIndex = fs.readFileSync('home/ubuntu/bitstarter/index.html')
 
 console.log(locIndex);
 
